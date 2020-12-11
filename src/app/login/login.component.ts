@@ -12,8 +12,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  handleForm(form): void {
-    console.log(this.email, form.form,'test');
+  handleForm(): void {
+    console.log(this.email);
   }
 
 

@@ -7,8 +7,8 @@
                 <!-- form -->
                 <div class="row pt-4">
                     <div class="col-md-12">
-                        <form class="px-5" #loginForm="ngForm" (ngSubmit)="handleForm(loginForm)">
-                            <input type="email" type="text"  class="form-control"
+                        <form class="px-5" ngForm (ngSubmit)="handleForm()">
+                            <input type="email" type="text" [(ngModel)]="email" name="email"  class="form-control"
                                 style="height: 9vh;" placeholder="Email or Phone" id="exampleInputEmail1">
                             <a href="#" style="font-size: 14px;" class="font-weight-bold">Forgot
                                 email? </a>
